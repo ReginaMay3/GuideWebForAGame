@@ -1,0 +1,87 @@
+:root {
+  --c1: rgba(25, 34, 39, 255);
+  --c2: rgba(244, 66, 86, 255);
+  --c3: rgba(56, 33, 47, 255);
+}
+#cover{
+  height: 400px;
+  width: 700px;
+}
+
+@media (max-width: 2000px){
+  body {
+  background-color: var(--c1);
+  color: white;
+  } 
+}
+
+.bar {
+  position: fixed;
+  height: 50px;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+nav>ul, .bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  position: fixed;
+  width: 86.8%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  display: block;
+}
+
+nav > ul > li:hover {
+  color: var(--c2);
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration:none;
+}
+.first {
+  padding-top: 10px;
+}
+header:not(.bar), code{
+  text-align: center;
+  background-color: var(--c3);
+  color: var(--c2);
+}
+
+.ag {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+#agt, #ra {
+  height: 180px;
+  width: 350px;
+}
+#ra {
+  padding-top: 70px;
+}
+
